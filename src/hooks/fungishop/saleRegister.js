@@ -20,7 +20,7 @@ const saleRegister = async (dataPayment, cart, router, context) => {
 
             console.log("order:" +  JSON.stringify(order))
             
-            const response = await fetch(`http://localhost:8000/apiClient/orders/`, {
+            const response = await fetch(`${process.env.NEXT_PUBLIC_COZYSHOP_HOSTNAME}/apiClient/orders/`, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
@@ -43,7 +43,7 @@ const saleRegister = async (dataPayment, cart, router, context) => {
                         price: item.price,
                     };
 
-                    const responseItem = fetch(`http://localhost:8000/apiClient/orders/OrderItems/`, {
+                    const responseItem = fetch(`${process.env.NEXT_PUBLIC_COZYSHOP_HOSTNAME}/apiClient/orders/OrderItems/`, {
                         method: 'POST',
                         headers: {
                             'Content-Type': 'application/json'

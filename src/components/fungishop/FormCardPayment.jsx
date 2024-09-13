@@ -55,7 +55,7 @@ const FormCardPayment = ({total}) => {
                                 //  callback llamado cuando el usuario haga clic en el botón enviar los datos
                                 //  ejemplo de envío de los datos recolectados por el Brick a su servidor
                                 return new Promise((resolve, reject) => {
-                                    fetch("http://localhost:8000/apiClient/proccess-payment/", {
+                                    fetch(`${process.env.NEXT_PUBLIC_COZYSHOP_HOSTNAME}/apiClient/proccess-payment/`, {
                                         method: "POST",
                                         headers: {
                                             "Content-Type": "application/json",
