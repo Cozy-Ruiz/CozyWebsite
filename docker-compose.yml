@@ -1,0 +1,14 @@
+version: '3'
+services:
+  front-cozywebsite:
+    image: front-cozywebsite
+    ports:
+      - 3000:3000
+    volumes:
+      - /Users/cozyruiz/Documents/front-cozywebsite/:/app
+    networks:
+      - cozywebsite-network
+
+networks:
+  cozywebsite-network:
+    driver: bridge

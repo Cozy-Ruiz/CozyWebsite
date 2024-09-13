@@ -1,0 +1,75 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders Header unchanged 1`] = `
+<div>
+  <nav>
+    <img
+      alt="menu"
+      data-nimg="1"
+      decoding="async"
+      loading="lazy"
+      src=""
+      style="color: transparent;"
+    />
+    <div>
+      <a
+        href="/"
+      >
+        <img
+          alt="logo"
+          data-nimg="1"
+          decoding="async"
+          loading="lazy"
+          src=""
+          style="color: transparent;"
+        />
+      </a>
+      <ul>
+        <li>
+          <a
+            href="/"
+          >
+            Home
+          </a>
+        </li>
+        <li>
+          <a
+            href="/about"
+          >
+            About
+          </a>
+        </li>
+        <li>
+          <a
+            href="/projects"
+          >
+            Projects
+          </a>
+        </li>
+        <li>
+          <a
+            href="/contact"
+          >
+            Contact
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div>
+      <ul>
+        <li />
+        <li>
+          <img
+            alt="user"
+            data-nimg="1"
+            decoding="async"
+            loading="lazy"
+            src=""
+            style="color: transparent; width: 25px; height: 25px;"
+          />
+        </li>
+      </ul>
+    </div>
+  </nav>
+</div>
+`;
